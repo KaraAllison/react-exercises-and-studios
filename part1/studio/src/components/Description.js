@@ -24,7 +24,7 @@ function RecipeAuthor() {
            <img src={authorPhoto} alt = "Mel, author of mel's Kitchen Cafe" className={styles.imageUpdates} />
            <div>
               <h3>{authorName}</h3>
-              <a href={authorLink}>mel's Kitchen Cafe</a> 
+              <button href={authorLink}>mel's Kitchen Cafe</button> 
            </div>
         </div>
      );

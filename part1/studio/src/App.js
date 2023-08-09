@@ -7,12 +7,14 @@ import RecipePhoto from './components/Photos';
 function App() {
   return (
     <div className="App">
-      <div className = "recipePhotoBlock">
-        <RecipePhoto />
       <div>
         <RecipeDescription />
-        <RecipeIngredients />
       </div>
+      <div className = "recipePhotoBlock">
+      <RecipeIngredients />
+
+        <RecipePhoto />
+      
     </div>
     </div>
   );

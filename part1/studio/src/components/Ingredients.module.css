@@ -1,3 +1,13 @@
 .ingredientList {
     text-align: left;
+    list-style: none;
+    
  }
+ 
+ li{
+    background-image: url("https://www.pngkey.com/png/detail/285-2854457_blue-bullet-point-png-download-arrow-bullets-icon.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 10px 30px;
+    }
