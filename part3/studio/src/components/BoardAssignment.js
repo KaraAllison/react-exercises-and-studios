@@ -1,28 +1,39 @@
 import { useState } from 'react';
 
 export default function BoardAssignment () {
+   const [boardName, setName] = useState('no boards yet!');
+
    const boards = [
       {
          label: 'Picnic Recipes',
-         value: 'Great recipes to bring to a summer picnic'
+         value: 'picnic recipes'
       },
       {
          label: 'Desserts',
-         value: 'Delectable desserts'
+         value: 'desserts'
       },
       {
          label: 'Baked Goods',
-         value: 'Things that go in the oven'
+         value: 'baked goods'
       }
    ];
 
+
+
    const handleChange = (event) => {
+      setName(event.target.value);
    }
 
    return (
       <div style={{paddingTop: "50px"}}>
       <label>Save to Board: </label>
       <select value={boardName} onChange={handleChange}>
+         <option></option>
+         {boards.map((item) => {
+            return (
+               <option value={item.value}>{item.label}</option>
+            )
+         })}
       </select>
 
       <p>Saved to {boardName}!</p>

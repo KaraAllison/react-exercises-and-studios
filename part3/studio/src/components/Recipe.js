@@ -45,7 +45,9 @@ const RecipeDescription = () => {
       <div> 
          <div>
             <h1>Strawberry Rhubarb Pie</h1>
-            <p>This best-ever strawberry rhubarb pie is filled to brimming with juicy, sweet strawberries, tart rhubarb, and the most delectable, buttery streusel topping.</p>
+            <p>This best-ever strawberry rhubarb pie is filled to brimming
+               with juicy, sweet strawberries, tart rhubarb, and the most
+               delectable, buttery streusel topping.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
